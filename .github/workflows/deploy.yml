@@ -1,0 +1,51 @@
+name: Publish WildFire Hockey GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+    workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy-github-pages:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.step_id.outputs.url_output }}
+
+    steps:
+      - name: Checkout Wifire Hockey Repo
+        uses: actions/checkout@v3
+
+      - name: Prepare Node Environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.12.1
+
+      - name: Install Leagueify Dependencies
+        run: npm ci
+
+      - name: Build Leagueify Page
+        run: |
+          npm run build
+          touch build/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './build'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
