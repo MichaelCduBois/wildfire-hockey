@@ -7,151 +7,155 @@
           "date": "2023-08-11",
           "opponent": "Angels",
           "location": "MCIHA Rink",
-          "result": "Win",
-          "goals_for": 14,
-          "goals_against": 2
+          "goalsFor": 14,
+          "goalsAgainst": 2,
+          "result": "Win"
         },
         {
           "date": "2023-08-19",
           "opponent": "H&R Inline Hockey",
           "location": "Pocatello",
-          "result": "Win",
-          "goals_for": 20,
-          "goals_against": 0
+          "goalsFor": 20,
+          "goalsAgainst": 0,
+          "result": "Win"
         }
       ],
-      "players": [
-        {
-          "number": 3,
-          "position": "Forward",
-          "games_played": 0,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 5,
-          "position": "Forward",
-          "games_played": 2,
-          "goals": 0,
-          "assists": 1,
-          "pim": 0
-        },
-        {
-          "number": 6,
-          "position": "Hybrid",
-          "games_played": 1,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 7,
-          "position": "Defender",
-          "games_played": 2,
-          "goals": 0,
-          "assists": 0,
-          "pim": 2
-        },
-        {
-          "number": 9,
-          "position": "Forward",
-          "games_played": 1,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 12,
-          "position": "Forward",
-          "games_played": 1,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 13,
-          "position": "Forward",
-          "games_played": 0,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 14,
-          "position": "Hybrid",
-          "games_played": 2,
-          "goals": 5,
-          "assists": 1,
-          "pim": 0
-        },
-        {
-          "number": 17,
-          "position": "Forward",
-          "games_played": 2,
-          "goals": 1,
-          "assists": 1,
-          "pim": 0
-        },
-        {
-          "number": 18,
-          "position": "Forward",
-          "games_played": 2,
-          "goals": 2,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 21,
-          "position": "Goalie",
-          "games_played": 2,
-          "saves": 10,
-          "goals_against": 1,
-          "wins": 1,
-          "pim": 0
-        },
-        {
-          "number": 28,
-          "position": "Hybrid",
-          "games_played": 2,
-          "goals": 3,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 29,
-          "position": "Forward",
-          "games_played": 0,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 35,
-          "position": "Goalie",
-          "games_played": 2,
-          "saves": 13,
-          "goals_against": 1,
-          "wins": 1,
-          "pim": 0
-        },
-        {
-          "number": 75,
-          "position": "Defender",
-          "games_played": 2,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        },
-        {
-          "number": 99,
-          "position": "Defender",
-          "games_played": 0,
-          "goals": 0,
-          "assists": 0,
-          "pim": 0
-        }
-      ]
+      "roster": {
+        "skaters": [
+          {
+            "number": 3,
+            "position": "Forward",
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 5,
+            "position": "Forward",
+            "gamesPlayed": 2,
+            "goals": 0,
+            "assists": 1,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 6,
+            "position": "Hybrid",
+            "gamesPlayed": 1,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 7,
+            "position": "Defender",
+            "gamesPlayed": 2,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 2
+          },
+          {
+            "number": 9,
+            "position": "Forward",
+            "gamesPlayed": 1,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 12,
+            "position": "Forward",
+            "gamesPlayed": 1,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 13,
+            "position": "Forward",
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 14,
+            "position": "Hybrid",
+            "gamesPlayed": 2,
+            "goals": 5,
+            "assists": 1,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 17,
+            "position": "Forward",
+            "gamesPlayed": 2,
+            "goals": 1,
+            "assists": 1,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 18,
+            "position": "Forward",
+            "gamesPlayed": 2,
+            "goals": 2,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 28,
+            "position": "Hybrid",
+            "gamesPlayed": 2,
+            "goals": 3,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 29,
+            "position": "Forward",
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 75,
+            "position": "Defender",
+            "gamesPlayed": 2,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 99,
+            "position": "Defender",
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "penaltyMinutes": 0
+          }
+        ],
+        "goalies": [
+          {
+            "number": 21,
+            "position": "Goalie",
+            "gamesPlayed": 2,
+            "saves": 10,
+            "goalsAgainst": 1,
+            "wins": 1,
+            "penaltyMinutes": 0
+          },
+          {
+            "number": 35,
+            "position": "Goalie",
+            "gamesPlayed": 2,
+            "saves": 13,
+            "goalsAgainst": 1,
+            "wins": 1,
+            "penaltyMinutes": 0
+          }
+        ]
+      }
     }
   ]
 }

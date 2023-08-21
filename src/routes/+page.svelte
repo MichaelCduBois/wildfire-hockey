@@ -1,3 +1,128 @@
+<script lang="ts">
+  // 3rd Party Imports
+  import {
+    Accordion,
+    AccordionItem,
+    Table,
+    tableMapperValues,
+  } from "@skeletonlabs/skeleton";
+  // Type Imports
+  import type { TableSource } from "@skeletonlabs/skeleton";
+  // Stat Imports
+  import stats from "$lib/stats.json";
+
+  // Script Code
+  const seasons: Array<object> = [];
+  stats.seasons.forEach((season) => {
+    seasons.push(season);
+  });
+
+  function getGameStats(selectedSeason: number) {
+    const gameStats: Array<object> = [];
+    stats.seasons.forEach((season) => {
+      if (season.year === selectedSeason) {
+        season.games.forEach((game) => {
+          game.score = `${game.goalsFor} - ${game.goalsAgainst}`;
+          gameStats.push(game);
+        });
+      }
+    });
+    return gameStats;
+  }
+
+  function getGoalieStats(selectedSeason: number) {
+    const goalieStats: Array<object> = [];
+    stats.seasons.forEach((season) => {
+      if (season.year === selectedSeason) {
+        season.roster.goalies.forEach((goalie) => {
+          goalie.savePercentage = (
+            goalie.saves /
+            (goalie.saves + goalie.goalsAgainst)
+          ).toFixed(3);
+          goalieStats.push(goalie);
+        });
+      }
+    });
+    return goalieStats;
+  }
+
+  function getPlayerStats(selectedSeason: number) {
+    const rosterStats: Array<object> = [];
+    stats.seasons.forEach((season) => {
+      if (season.year === selectedSeason) {
+        season.roster.skaters.forEach((player) => {
+          player.points = player.goals + player.assists;
+          rosterStats.push(player);
+        });
+      }
+    });
+    return rosterStats;
+  }
+
+  function generateGameTable(selectedSeason: number) {
+    const gameTable: TableSource = {
+      head: ["Date", "Opponent", "location", "Score", "Result"],
+      body: tableMapperValues(getGameStats(selectedSeason), [
+        "date",
+        "opponent",
+        "location",
+        "score",
+        "result",
+      ]),
+    };
+
+    return gameTable;
+  }
+
+  function generateGoalieTable(selectedSeason: number) {
+    const goalieTable: TableSource = {
+      head: [
+        "Number",
+        "Position",
+        "Games Played",
+        "Save Percentage",
+        "Saves",
+        "Goals Against",
+      ],
+      body: tableMapperValues(getGoalieStats(selectedSeason), [
+        "number",
+        "position",
+        "gamesPlayed",
+        "savePercentage",
+        "saves",
+        "goalsAgainst",
+      ]),
+    };
+
+    return goalieTable;
+  }
+
+  function generateSkaterTable(selectedSeason: number) {
+    const playerTable: TableSource = {
+      head: [
+        "Number",
+        "Position",
+        "Games Played",
+        "Points",
+        "Goals",
+        "Assists",
+        "Penalty Minutes",
+      ],
+      body: tableMapperValues(getPlayerStats(selectedSeason), [
+        "number",
+        "position",
+        "gamesPlayed",
+        "points",
+        "goals",
+        "assists",
+        "penaltyMinutes",
+      ]),
+    };
+
+    return playerTable;
+  }
+</script>
+
 <div class="container mx-auto flex justify-center items-center">
   <img
     src="Wildfire Text.png"
@@ -67,6 +192,21 @@
     </a>
   </div>
 </div>
+
+<h2>Statistics:</h2>
+<Accordion autocollapse>
+  {#each seasons as season, index}
+    <!--  -->
+    <AccordionItem open={index === 0}>
+      <svelte:fragment slot="summary"><h2>{season.year}</h2></svelte:fragment>
+      <svelte:fragment slot="content">
+        <Table source={generateGameTable(season.year)} />
+        <Table source={generateSkaterTable(season.year)} />
+        <Table source={generateGoalieTable(season.year)} />
+      </svelte:fragment>
+    </AccordionItem>
+  {/each}
+</Accordion>
 
 <style>
   h2,
