@@ -8,16 +8,14 @@
           "opponent": "Angels",
           "location": "MCIHA Rink",
           "goalsFor": 14,
-          "goalsAgainst": 2,
-          "result": "Win"
+          "goalsAgainst": 2
         },
         {
           "date": "2023-08-19",
           "opponent": "H&R Inline Hockey",
           "location": "Pocatello",
           "goalsFor": 20,
-          "goalsAgainst": 0,
-          "result": "Win"
+          "goalsAgainst": 0
         }
       ],
       "roster": {

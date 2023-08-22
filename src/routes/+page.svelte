@@ -23,6 +23,13 @@
       if (season.year === selectedSeason) {
         season.games.forEach((game) => {
           game.score = `${game.goalsFor} - ${game.goalsAgainst}`;
+          if (game.goalsFor > game.goalsAgainst) {
+            game.result = "Win";
+          } else if (game.goalsFor < game.goalsAgainst) {
+            game.result = "Loss";
+          } else {
+            game.result = "Tie";
+          }
           gameStats.push(game);
         });
       }
