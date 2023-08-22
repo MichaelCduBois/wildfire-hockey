@@ -3,7 +3,6 @@ name: Publish WildFire Hockey GitHub Pages
 on:
   push:
     branches: ["main"]
-    workflow_dispatch:
 
 permissions:
   contents: read
@@ -19,7 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.step_id.outputs.url_output }}
 
     steps:
       - name: Checkout Wifire Hockey Repo
