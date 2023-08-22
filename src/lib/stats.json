@@ -141,6 +141,7 @@
             "saves": 10,
             "goalsAgainst": 1,
             "wins": 1,
+            "shutouts": 0,
             "penaltyMinutes": 0
           },
           {
@@ -150,6 +151,7 @@
             "saves": 13,
             "goalsAgainst": 1,
             "wins": 1,
+            "shutouts": 0,
             "penaltyMinutes": 0
           }
         ]
