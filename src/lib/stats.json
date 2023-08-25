@@ -32,7 +32,7 @@
             "number": 5,
             "position": "Forward",
             "gamesPlayed": 2,
-            "goals": 0,
+            "goals": 2,
             "assists": 1,
             "penaltyMinutes": 0
           },
@@ -40,7 +40,7 @@
             "number": 6,
             "position": "Hybrid",
             "gamesPlayed": 1,
-            "goals": 0,
+            "goals": 3,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -56,7 +56,7 @@
             "number": 9,
             "position": "Forward",
             "gamesPlayed": 1,
-            "goals": 0,
+            "goals": 4,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -64,7 +64,7 @@
             "number": 12,
             "position": "Forward",
             "gamesPlayed": 1,
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -80,7 +80,7 @@
             "number": 14,
             "position": "Hybrid",
             "gamesPlayed": 2,
-            "goals": 5,
+            "goals": 8,
             "assists": 1,
             "penaltyMinutes": 0
           },
@@ -88,7 +88,7 @@
             "number": 17,
             "position": "Forward",
             "gamesPlayed": 2,
-            "goals": 1,
+            "goals": 4,
             "assists": 1,
             "penaltyMinutes": 0
           },
@@ -96,7 +96,7 @@
             "number": 18,
             "position": "Forward",
             "gamesPlayed": 2,
-            "goals": 2,
+            "goals": 5,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -104,7 +104,7 @@
             "number": 28,
             "position": "Hybrid",
             "gamesPlayed": 2,
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -138,20 +138,20 @@
             "number": 21,
             "position": "Goalie",
             "gamesPlayed": 2,
-            "saves": 10,
+            "saves": 15,
             "goalsAgainst": 1,
-            "wins": 1,
-            "shutouts": 0,
+            "wins": 2,
+            "shutouts": 1,
             "penaltyMinutes": 0
           },
           {
             "number": 35,
             "position": "Goalie",
             "gamesPlayed": 2,
-            "saves": 13,
+            "saves": 16,
             "goalsAgainst": 1,
-            "wins": 1,
-            "shutouts": 0,
+            "wins": 2,
+            "shutouts": 1,
             "penaltyMinutes": 0
           }
         ]
