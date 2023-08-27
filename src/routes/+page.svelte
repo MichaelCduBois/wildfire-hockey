@@ -85,19 +85,20 @@
 </div>
 
 <h2>Statistics:</h2>
-<Accordion autocollapse>
-  {#each seasons as season, index}
-    <!--  -->
-    <AccordionItem open={index === 0}>
-      <svelte:fragment slot="summary"><h2>{season.year}</h2></svelte:fragment>
-      <svelte:fragment slot="content">
-        <Table source={gamesTable(season.year)} />
-        <Table source={playersTable(season.year)} />
-        <Table source={goaliesTable(season.year)} />
-      </svelte:fragment>
-    </AccordionItem>
-  {/each}
-</Accordion>
+<div class="stats-container">
+  <Accordion autocollapse>
+    {#each seasons as season, index}
+      <AccordionItem open={index === 0}>
+        <svelte:fragment slot="summary"><h2>{season.year}</h2></svelte:fragment>
+        <svelte:fragment slot="content">
+          <Table source={gamesTable(season.year)} />
+          <Table source={playersTable(season.year)} />
+          <Table source={goaliesTable(season.year)} />
+        </svelte:fragment>
+      </AccordionItem>
+    {/each}
+  </Accordion>
+</div>
 
 <style>
   h2,
@@ -107,12 +108,17 @@
     width: 50%;
   }
 
+  .sponsor-logo {
+    max-height: 100px;
+  }
+
   .sponsor-logo-500 {
     max-width: 100%;
     max-height: 200px;
   }
 
-  .sponsor-logo {
-    max-height: 100px;
+  .stats-container {
+    margin: auto;
+    max-width: 950px;
   }
 </style>
