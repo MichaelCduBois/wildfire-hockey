@@ -33,7 +33,7 @@
         alt="Handy Truck Lines Logo" />
     </a>
   </div>
-  <div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-1">
+  <div class="logo-cloud grid-cols-1 lg:!grid-cols-4 gap-1">
     <a
       class="logo-item !bg-transparent"
       href="https://leagueify.org/"
@@ -61,6 +61,14 @@
         src="sponsors/Hunts Mobile Repair.png"
         alt="Hunts Mobile Repair Logo" />
     </a>
+    <a
+      class="logo-item !bg-transparent"
+      href="https://thriftyplus.com/"
+      target="_blank">
+      <img
+        class="sponsor-logo"
+        src="sponsors/Thrifty.png"
+        alt="Thrifty Plus" />
   </div>
   <div class="logo-cloud grid-cols-1 lg:!grid-cols-2 gap-1">
     <a
