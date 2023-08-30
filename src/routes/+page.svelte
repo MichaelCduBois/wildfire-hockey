@@ -33,7 +33,7 @@
         alt="Handy Truck Lines Logo" />
     </a>
   </div>
-  <div class="logo-cloud grid-cols-1 lg:!grid-cols-4 gap-1">
+  <div class="logo-cloud grid-cols-1 lg:!grid-cols-5 gap-1">
     <a
       class="logo-item !bg-transparent"
       href="https://leagueify.org/"
@@ -69,6 +69,16 @@
         class="sponsor-logo"
         src="sponsors/Thrifty.png"
         alt="Thrifty Plus" />
+    </a>
+    <a
+      class="logo-item !bg-transparent"
+      href="https://www.facebook.com/profile.php?id=100063828369323&mibextid=LQQJ4d"
+      target="_blank">
+      <img
+        class="sponsor-logo"
+        src="sponsors/Js Mobile Garage.png"
+        alt="Js Mobile Garage Logo" />
+    </a>
   </div>
   <div class="logo-cloud grid-cols-1 lg:!grid-cols-2 gap-1">
     <a
