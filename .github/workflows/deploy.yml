@@ -1,4 +1,4 @@
-name: Publish WildFire Hockey GitHub Pages
+name: Publish Wildfire Hockey GitHub Pages
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       name: github-pages
 
     steps:
-      - name: Checkout Wifire Hockey Repo
+      - name: Checkout Wildfire Hockey Repo
         uses: actions/checkout@v3
 
       - name: Prepare Node Environment
@@ -28,10 +28,10 @@ jobs:
         with:
           node-version: 18.12.1
 
-      - name: Install Leagueify Dependencies
+      - name: Install Wildfire Dependencies
         run: npm ci
 
-      - name: Build Leagueify Page
+      - name: Build Wildfire Page
         run: |
           npm run build
           touch build/.nojekyll
