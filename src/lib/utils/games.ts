@@ -26,15 +26,23 @@ function getStats(selectedSeason: number) {
   stats.seasons.forEach((season) => {
     if (season.year === selectedSeason) {
       season.games.forEach((game: Game) => {
-        // Generate Score String
-        game.score = `${game.goalsFor} - ${game.goalsAgainst}`;
-        // Generate Game Result String
-        game.result =
-          game.goalsFor > game.goalsAgainst
-            ? "Win"
-            : game.goalsFor < game.goalsAgainst
-            ? "Loss"
-            : "Tie";
+        // If Game was Played
+        if (game.played) {
+          // Generate Score String
+          game.score = `${game.goalsFor} - ${game.goalsAgainst}`;
+          // Generate Game Result String
+          game.result =
+            game.goalsFor > game.goalsAgainst
+              ? "Win"
+              : game.goalsFor < game.goalsAgainst
+              ? "Loss"
+              : "Tie";
+        } else {
+          // Generate Score String
+          game.score = "-";
+          // Generate Game Result String
+          game.result = "-"
+        }
 
         // Add Game to Array
         gameStats.push(game);
@@ -53,4 +61,5 @@ interface Game {
   goalsAgainst: number;
   result?: string;
   score?: string;
+  played: boolean;
 }
