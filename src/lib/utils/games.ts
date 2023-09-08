@@ -53,7 +53,7 @@ function getStats(selectedSeason: number) {
   return gameStats;
 }
 
-interface Game {
+export interface Game {
   date: string;
   opponent: string;
   location: string;

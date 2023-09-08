@@ -5,10 +5,11 @@
   import gamesTable from "$lib/utils/games";
   import goaliesTable from "$lib/utils/goalies";
   import playersTable from "$lib/utils/players";
+  import getRecord, { type Season } from "$lib/utils/seasons";
   import stats from "$lib/stats.json";
 
   // Script Code
-  const seasons: Array<object> = [];
+  const seasons: Array<Season> = [];
   stats.seasons.forEach((season) => {
     seasons.push(season);
   });
@@ -107,7 +108,8 @@
   <Accordion autocollapse>
     {#each seasons as season, index}
       <AccordionItem open={index === 0}>
-        <svelte:fragment slot="summary"><h2>{season.year}</h2></svelte:fragment>
+        <svelte:fragment slot="summary"
+          ><h2>{season.year}: {getRecord(season)}</h2></svelte:fragment>
         <svelte:fragment slot="content">
           <Table source={gamesTable(season.year)} />
           <Table source={playersTable(season.year)} />
