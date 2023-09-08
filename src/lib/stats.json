@@ -23,6 +23,27 @@
           "location": "MCIHA Rink",
           "goalsFor": 8,
           "goalsAgainst": 6
+        },
+        {
+          "date": "2023-09-08",
+          "opponent": "Angels",
+          "location": "MCIHA Rink",
+          "goalsFor": 0,
+          "goalsAgainst": 0
+        },
+        {
+          "date": "2023-09-22",
+          "opponent": "Angels",
+          "location": "MCIHA Rink",
+          "goalsFor": 0,
+          "goalsAgainst": 0
+        },
+        {
+          "date": "2023-10-06",
+          "opponent": "Angels",
+          "location": "MCIHA Rink",
+          "goalsFor": 0,
+          "goalsAgainst": 0
         }
       ],
       "roster": {
