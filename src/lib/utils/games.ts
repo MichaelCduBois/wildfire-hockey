@@ -41,7 +41,7 @@ function getStats(selectedSeason: number) {
           // Generate Score String
           game.score = "-";
           // Generate Game Result String
-          game.result = "-"
+          game.result = "-";
         }
 
         // Add Game to Array
