@@ -22,7 +22,7 @@
       alt="Wildfire Text"
       class="w-1/2 mx-auto" />
   </div>
-  <h2>A big thank you to all of our sponsors!</h2>
+  <h2 class="section-heading">A big thank you to all of our sponsors!</h2>
   <div class="logo-cloud-container">
     <div class="logo-cloud grid-cols-1 lg:!grid-cols-1 gap-1">
       <a
@@ -104,13 +104,15 @@
     </div>
   </div>
 
-  <h2>Statistics:</h2>
+  <h2 class="section-heading">Statistics by Season:</h2>
   <div class="stats-container">
     <Accordion autocollapse>
       {#each seasons as season, index}
         <AccordionItem open={index === 0}>
           <svelte:fragment slot="summary"
-            ><h2>{season.year}: {getRecord(season)}</h2></svelte:fragment>
+            ><h3 class="season">
+              {season.year}: {getRecord(season)}
+            </h3></svelte:fragment>
           <svelte:fragment slot="content">
             <Table source={gamesTable(season.year)} />
             <Table source={playersTable(season.year)} />
@@ -123,7 +125,6 @@
 </div>
 
 <style>
-  h2,
   .logo-cloud-container {
     margin: auto;
     text-align: center;
@@ -132,6 +133,17 @@
 
   .page-container {
     padding: 1.5rem 1rem;
+  }
+
+  .season {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .section-heading {
+    margin: 1rem;
+    font-size: 1.75rem;
+    text-align: center;
   }
 
   .sponsor-logo {
