@@ -7,15 +7,7 @@ import stats from "$lib/stats.json";
 
 export default function playersTable(selectedSeason: number) {
   const playerTable: TableSource = {
-    head: [
-      "Number",
-      "Position",
-      "Games Played",
-      "Points",
-      "Goals",
-      "Assists",
-      "Penalty Minutes",
-    ],
+    head: ["Number", "Position", "Games Played", "Points", "Goals", "Assists", "Penalty Minutes"],
     body: tableMapperValues(getStats(selectedSeason), [
       "number",
       "position",

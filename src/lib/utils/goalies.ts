@@ -39,15 +39,10 @@ function getStats(selectedSeason: number) {
     if (season.year === selectedSeason) {
       season.roster.goalies.forEach((goalie: Goalie) => {
         // Generate Save Percentage
-        goalie.savePercentage = (
-          goalie.saves /
-          (goalie.saves + goalie.goalsAgainst)
-        ).toFixed(3);
+        goalie.savePercentage = (goalie.saves / (goalie.saves + goalie.goalsAgainst)).toFixed(3);
 
         // Generate Goals Against Average
-        goalie.goalsAgainstAverage = (
-          goalie.goalsAgainst / goalie.gamesPlayed
-        ).toFixed(2);
+        goalie.goalsAgainstAverage = (goalie.goalsAgainst / goalie.gamesPlayed).toFixed(2);
 
         // Add Goalie to Array
         goalieStats.push(goalie);
