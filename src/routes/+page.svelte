@@ -18,9 +18,9 @@
 <div class="page-container">
   <div class="container mx-auto flex justify-center items-center">
     <img
-      src="Wildfire Text.png"
-      alt="Wildfire Text"
-      class="w-1/2 mx-auto" />
+      src="Wildfire Logo.png"
+      alt="Wildfire Logo"
+      class="w-3/5 md:w-1/3 mx-auto" />
   </div>
   <h2 class="section-heading">A big thank you to all of our sponsors!</h2>
   <div class="logo-cloud-container">
