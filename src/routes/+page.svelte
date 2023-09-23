@@ -115,8 +115,8 @@
             </h3></svelte:fragment>
           <svelte:fragment slot="content">
             <Table source={gamesTable(season.year)} />
-            <Table source={playersTable(season.year)} />
             <Table source={goaliesTable(season.year)} />
+            <Table source={playersTable(season.year)} />
           </svelte:fragment>
         </AccordionItem>
       {/each}
