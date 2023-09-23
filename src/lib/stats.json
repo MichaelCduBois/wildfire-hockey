@@ -39,9 +39,9 @@
           "date": "2023-09-22",
           "opponent": "Angels",
           "location": "MCIHA Rink",
-          "goalsFor": 0,
+          "goalsFor": 8,
           "goalsAgainst": 0,
-          "played": false
+          "played": true
         },
         {
           "date": "2023-10-06*",
@@ -73,15 +73,15 @@
           {
             "number": 6,
             "position": "Hybrid",
-            "gamesPlayed": 2,
-            "goals": 5,
+            "gamesPlayed": 3,
+            "goals": 7,
             "assists": 0,
             "penaltyMinutes": 0
           },
           {
             "number": 7,
             "position": "Defender",
-            "gamesPlayed": 4,
+            "gamesPlayed": 5,
             "goals": 0,
             "assists": 0,
             "penaltyMinutes": 2
@@ -89,15 +89,15 @@
           {
             "number": 9,
             "position": "Forward",
-            "gamesPlayed": 2,
-            "goals": 5,
+            "gamesPlayed": 3,
+            "goals": 6,
             "assists": 0,
             "penaltyMinutes": 0
           },
           {
             "number": 12,
             "position": "Forward",
-            "gamesPlayed": 3,
+            "gamesPlayed": 4,
             "goals": 1,
             "assists": 0,
             "penaltyMinutes": 0
@@ -121,16 +121,16 @@
           {
             "number": 17,
             "position": "Forward",
-            "gamesPlayed": 4,
-            "goals": 10,
+            "gamesPlayed": 5,
+            "goals": 11,
             "assists": 2,
             "penaltyMinutes": 0
           },
           {
             "number": 18,
             "position": "Forward",
-            "gamesPlayed": 3,
-            "goals": 6,
+            "gamesPlayed": 4,
+            "goals": 7,
             "assists": 0,
             "penaltyMinutes": 0
           },
@@ -145,15 +145,15 @@
           {
             "number": 29,
             "position": "Forward",
-            "gamesPlayed": 1,
-            "goals": 1,
+            "gamesPlayed": 2,
+            "goals": 2,
             "assists": 0,
             "penaltyMinutes": 0
           },
           {
             "number": 75,
             "position": "Defender",
-            "gamesPlayed": 4,
+            "gamesPlayed": 5,
             "goals": 1,
             "assists": 0,
             "penaltyMinutes": 0
@@ -161,8 +161,8 @@
           {
             "number": 99,
             "position": "Defender",
-            "gamesPlayed": 1,
-            "goals": 1,
+            "gamesPlayed": 2,
+            "goals": 2,
             "assists": 0,
             "penaltyMinutes": 0
           }
