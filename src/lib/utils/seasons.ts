@@ -21,5 +21,5 @@ export default function getRecord(season: Season) {
 export interface Season {
   year: number;
   games: Game[];
-  roster: Object;
+  roster: object;
 }
