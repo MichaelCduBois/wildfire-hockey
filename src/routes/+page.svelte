@@ -2,6 +2,7 @@
   // 3rd Party Imports
   import { Accordion, AccordionItem, Table } from "@skeletonlabs/skeleton";
   // Wildfire Hockey Imports
+  import { Sponsor, SponsorList, SponsorRow } from "$lib/components/sponsors"
   import gamesTable from "$lib/utils/games";
   import goaliesTable from "$lib/utils/goalies";
   import playersTable from "$lib/utils/players";
@@ -22,87 +23,22 @@
       alt="Wildfire Logo"
       class="w-3/5 md:w-1/3 mx-auto" />
   </div>
-  <h2 class="section-heading">A big thank you to all of our sponsors!</h2>
-  <div class="logo-cloud-container">
-    <div class="logo-cloud grid-cols-1 lg:!grid-cols-1 gap-1">
-      <a
-        class="logo-item !bg-transparent"
-        href="https://handytruckline.com/"
-        target="_blank">
-        <img
-          class="sponsor-logo-500"
-          src="sponsors/Handy Truck Lines.png"
-          alt="Handy Truck Lines Logo" />
-      </a>
-    </div>
-    <div class="logo-cloud grid-cols-1 lg:!grid-cols-5 gap-1">
-      <a
-        class="logo-item !bg-transparent"
-        href="https://leagueify.org/"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Leagueify.png"
-          alt="Leagueify Logo" />
-      </a>
-      <a
-        class="logo-item !bg-transparent"
-        href="https://www.libbydphotography.com"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Libby d Photography.png"
-          alt="Libby d Photography Logo" />
-      </a>
-      <a
-        class="logo-item !bg-transparent"
-        href="https://www.facebook.com/Huntsmobilewelding/"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Hunts Mobile Repair.png"
-          alt="Hunts Mobile Repair Logo" />
-      </a>
-      <a
-        class="logo-item !bg-transparent"
-        href="https://thriftyplus.com/"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Thrifty.png"
-          alt="Thrifty Plus" />
-      </a>
-      <a
-        class="logo-item !bg-transparent"
-        href="https://www.facebook.com/profile.php?id=100063828369323&mibextid=LQQJ4d"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Js Mobile Garage.png"
-          alt="Js Mobile Garage Logo" />
-      </a>
-    </div>
-    <div class="logo-cloud grid-cols-1 lg:!grid-cols-2 gap-1">
-      <a
-        class="logo-item !bg-transparent"
-        href="https://agproud.com"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Agproud.png"
-          alt="Agproud Logo" />
-      </a>
-      <a
-        class="logo-item !bg-transparent"
-        href="https://idahowatersports.com"
-        target="_blank">
-        <img
-          class="sponsor-logo"
-          src="sponsors/Idaho Water Sports.png"
-          alt="Idaho Water Sports Logo" />
-      </a>
-    </div>
-  </div>
+  <SponsorList>
+    <SponsorRow sponsorCount={1}>
+      <Sponsor sponsorName={"Handy Truck Lines"} link={"https://handytruckline.com/"} tier={"hat-trick"} />
+    </SponsorRow>
+    <SponsorRow sponsorCount={5}>
+      <Sponsor sponsorName={"Leagueify"} link={"https://leagueify.org/"} tier={"assist"} />
+      <Sponsor sponsorName={"Libby d Photography"} link={"https://www.libbydphotography.com/"} tier={"assist"} />
+      <Sponsor sponsorName={"Hunts Mobile Repair"} link={"https://www.facebook.com/Huntsmobilewelding/"} tier={"assist"} />
+      <Sponsor sponsorName={"Thrifty"} link={"https://thriftyplus.com/"} tier={"assist"} />
+      <Sponsor sponsorName={"Js Mobile Garage"} link={"https://www.facebook.com/profile.php?id=100063828369323"} tier={"assist"} />
+    </SponsorRow>
+    <SponsorRow sponsorCount={2}>
+      <Sponsor sponsorName={"Agproud"} link={"https://agproud.com/"} tier={"assist"} />
+      <Sponsor sponsorName={"Idaho Water Sports"} link={"https://idahowatersports.com/"} tier={"assist"} />
+    </SponsorRow>
+  </SponsorList>
 
   <h2 class="section-heading">Statistics by Season:</h2>
   <div class="stats-container">
@@ -125,12 +61,6 @@
 </div>
 
 <style>
-  .logo-cloud-container {
-    margin: auto;
-    text-align: center;
-    width: 50%;
-  }
-
   .page-container {
     padding: 1.5rem 1rem;
   }
@@ -144,15 +74,6 @@
     margin: 1rem;
     font-size: 1.75rem;
     text-align: center;
-  }
-
-  .sponsor-logo {
-    max-height: 100px;
-  }
-
-  .sponsor-logo-500 {
-    max-width: 100%;
-    max-height: 200px;
   }
 
   .stats-container {
