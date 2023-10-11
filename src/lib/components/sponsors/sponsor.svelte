@@ -5,7 +5,7 @@
 </script>
 
 <a
-class="logo-item !bg-transparent"
+class="logo-item !bg-transparent shadow-transparent"
 href={link}
 target="_blank">
   <img
