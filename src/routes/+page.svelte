@@ -20,7 +20,7 @@
   <div class="container mx-auto flex justify-center items-center">
     <img
       src="Wildfire Logo.png"
-      alt="Wildfire Logo"
+      alt="Wildfire Logo | Designed by Fan Zone Athletics https://www.fanzoneathletics.com/"
       class="w-3/5 md:w-1/3 mx-auto" />
   </div>
   <SponsorList>
