@@ -44,9 +44,25 @@
           "played": true
         },
         {
-          "date": "2023-10-06*",
+          "date": "2023-10-13",
           "opponent": "Angels",
           "location": "MCIHA Rink",
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "played": true
+        },
+        {
+          "date": "2023-10-20*",
+          "opponent": "Angels",
+          "location": "MCIHA Rink",
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "played": false
+        },
+        {
+          "date": "2023-11-04*",
+          "opponent": "Elko Hockey Association",
+          "location": "Elko",
           "goalsFor": 0,
           "goalsAgainst": 0,
           "played": false
@@ -81,7 +97,7 @@
           {
             "number": 7,
             "position": "Defender",
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "goals": 0,
             "assists": 0,
             "penaltyMinutes": 2
@@ -97,7 +113,7 @@
           {
             "number": 12,
             "position": "Forward",
-            "gamesPlayed": 4,
+            "gamesPlayed": 5,
             "goals": 1,
             "assists": 0,
             "penaltyMinutes": 0
@@ -121,8 +137,8 @@
           {
             "number": 17,
             "position": "Forward",
-            "gamesPlayed": 5,
-            "goals": 11,
+            "gamesPlayed": 6,
+            "goals": 12,
             "assists": 2,
             "penaltyMinutes": 0
           },
@@ -137,7 +153,7 @@
           {
             "number": 28,
             "position": "Hybrid",
-            "gamesPlayed": 4,
+            "gamesPlayed": 5,
             "goals": 5,
             "assists": 0,
             "penaltyMinutes": 2
@@ -145,7 +161,7 @@
           {
             "number": 29,
             "position": "Forward",
-            "gamesPlayed": 2,
+            "gamesPlayed": 3,
             "goals": 2,
             "assists": 0,
             "penaltyMinutes": 0
@@ -153,7 +169,7 @@
           {
             "number": 75,
             "position": "Defender",
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "goals": 1,
             "assists": 0,
             "penaltyMinutes": 0
@@ -161,13 +177,23 @@
           {
             "number": 99,
             "position": "Defender",
-            "gamesPlayed": 2,
+            "gamesPlayed": 3,
             "goals": 2,
             "assists": 0,
             "penaltyMinutes": 0
           }
         ],
         "goalies": [
+          {
+            "number": 17,
+            "position": "Goalie",
+            "gamesPlayed": 1,
+            "saves": 15,
+            "goalsAgainst": 2,
+            "wins": 0,
+            "shutouts": 0,
+            "penaltyMinutes": 0
+          },
           {
             "number": 21,
             "position": "Goalie",
