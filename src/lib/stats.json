@@ -2,6 +2,54 @@
   "seasons": [
     {
       "year": 2023,
+      "sponsors": [
+        [
+          {
+            "name": "Handy Truck Lines",
+            "url": "https://www.handytruckline.com/",
+            "tier": "hat-trick"
+          }
+        ],
+        [
+          {
+            "name": "Leagueify",
+            "url": "https://leagueify.org/",
+            "tier": "assist"
+          },
+          {
+            "name": "Libby d Photography",
+            "url": "https://www.libbydphotography.com/",
+            "tier": "assist"
+          },
+          {
+            "name": "Hunts Mobile Repair",
+            "url": "https://www.facebook.com/Huntsmobilewelding/",
+            "tier": "assist"
+          },
+          {
+            "name": "Thrifty",
+            "url": "https://thriftyplus.com/",
+            "tier": "assist"
+          },
+          {
+            "name": "Js Mobile Garage",
+            "url": "https://www.facebook.com/profile.php?id=100063828369323",
+            "tier": "assist"
+          }
+        ],
+        [
+          {
+            "name": "Agproud",
+            "url": "https://agproud.com/",
+            "tier": "assist"
+          },
+          {
+            "name": "Idaho Water Sports",
+            "url": "https://idahowatersports.com/",
+            "tier": "assist"
+          }
+        ]
+      ],
       "games": [
         {
           "date": "2023-08-11",

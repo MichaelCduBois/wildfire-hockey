@@ -1,6 +1,15 @@
-<h2 class="section-heading">A big thank you to all of our sponsors!</h2>
+<script lang="ts">
+  // Wildfire Hockey Imports
+  import { SponsorRow } from "$lib/components/sponsors"
+  import type { Season } from "$lib/utils/seasons";
+
+  export let season: Season;
+</script>
+
 <div class="logo-cloud-container">
-  <slot />
+  {#each season.sponsors as sponsorRowData}
+    <SponsorRow {sponsorRowData} year={season.year} />
+  {/each}
 </div>
 
 <style>
@@ -8,11 +17,5 @@
     margin: auto;
     text-align: center;
     width: 50%;
-  }
-
-  .section-heading {
-    margin: 1rem;
-    font-size: 1.75rem;
-    text-align: center;
   }
 </style>
