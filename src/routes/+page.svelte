@@ -2,7 +2,7 @@
   // 3rd Party Imports
   import { Accordion, AccordionItem, Table } from "@skeletonlabs/skeleton";
   // Wildfire Hockey Imports
-  import { Sponsor, SponsorList, SponsorRow } from "$lib/components/sponsors"
+  import { SponsorList } from "$lib/components/sponsors"
   import gamesTable from "$lib/utils/games";
   import goaliesTable from "$lib/utils/goalies";
   import playersTable from "$lib/utils/players";
@@ -23,23 +23,11 @@
       alt="Wildfire Logo | Designed by Fan Zone Athletics https://www.fanzoneathletics.com/"
       class="w-3/5 md:w-1/3 mx-auto" />
   </div>
-  <SponsorList>
-    <SponsorRow sponsorCount={1}>
-      <Sponsor sponsorName={"Handy Truck Lines"} link={"https://handytruckline.com/"} tier={"hat-trick"} />
-    </SponsorRow>
-    <SponsorRow sponsorCount={5}>
-      <Sponsor sponsorName={"Leagueify"} link={"https://leagueify.org/"} tier={"assist"} />
-      <Sponsor sponsorName={"Libby d Photography"} link={"https://www.libbydphotography.com/"} tier={"assist"} />
-      <Sponsor sponsorName={"Hunts Mobile Repair"} link={"https://www.facebook.com/Huntsmobilewelding/"} tier={"assist"} />
-      <Sponsor sponsorName={"Thrifty"} link={"https://thriftyplus.com/"} tier={"assist"} />
-      <Sponsor sponsorName={"Js Mobile Garage"} link={"https://www.facebook.com/profile.php?id=100063828369323"} tier={"assist"} />
-    </SponsorRow>
-    <SponsorRow sponsorCount={2}>
-      <Sponsor sponsorName={"Agproud"} link={"https://agproud.com/"} tier={"assist"} />
-      <Sponsor sponsorName={"Idaho Water Sports"} link={"https://idahowatersports.com/"} tier={"assist"} />
-    </SponsorRow>
-  </SponsorList>
+  <!-- Current Sponsor Section -->
+  <h2 class="section-heading">A big thank you to all of our current sponsors!</h2>
+  <SponsorList season={seasons[0]} />
 
+  <!-- Statistics Section -->
   <h2 class="section-heading">Statistics by Season:</h2>
   <div class="stats-container">
     <Accordion autocollapse>
@@ -49,7 +37,13 @@
             ><h3 class="season">
               {season.year}: {getRecord(season)}
             </h3></svelte:fragment>
-          <svelte:fragment slot="content">
+            <svelte:fragment slot="content">
+            <!-- Show Sponsors of Previous Seasons -->
+            {#if seasons[0].year !== season.year}
+              <h3 class="section-heading">Thank you to our sponsors for the {season.year} season:</h3>
+              <SponsorList {season} />
+            {/if}
+            <!-- Show Season Statistics -->
             <Table source={gamesTable(season.year)} />
             <Table source={goaliesTable(season.year)} />
             <Table source={playersTable(season.year)} />

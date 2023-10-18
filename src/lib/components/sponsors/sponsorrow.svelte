@@ -1,5 +1,9 @@
 <script lang="ts">
-  export let sponsorCount: number;
+  // Wildfire Hockey Imports
+  import { Sponsor } from "$lib/components/sponsors"
+
+  export let sponsorRowData: Sponsor[];
+  export let year: number;
 
   // Tailwind workaround for dynamic classes
   const _possibleClasses: Array<string> = [
@@ -13,6 +17,8 @@
   _possibleClasses;
 </script>
 
-<div class="logo-cloud grid-cols-1 lg:!grid-cols-{sponsorCount} gap-1">
-  <slot />
+<div class="logo-cloud grid-cols-1 lg:!grid-cols-{sponsorRowData.length} gap-1">
+  {#each sponsorRowData as sponsor}
+    <Sponsor {sponsor} {year} />
+  {/each}
 </div>

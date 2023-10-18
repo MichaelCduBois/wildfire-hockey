@@ -1,17 +1,19 @@
 <script lang="ts">
-  export let link: string;
-  export let sponsorName: string;
-  export let tier: string;
+  // Wildfire Imports
+  import type { Sponsor } from "$lib/utils/sponsors";
+
+  export let sponsor: Sponsor;
+  export let year: number;
 </script>
 
 <a
 class="logo-item !bg-transparent shadow-transparent"
-href={link}
+href={sponsor.url}
 target="_blank">
   <img
-    class={`sponsor-${tier}`}
-    src={`sponsors/${sponsorName}.png`}
-    alt={`${sponsorName} Logo`} />
+    class={`sponsor-${sponsor.tier}`}
+    src={`sponsors/${year}/${sponsor.name}.png`}
+    alt={`${sponsor.name} Logo`} />
 </a>
 
 <style>

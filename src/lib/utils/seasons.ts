@@ -1,5 +1,6 @@
 // Wildfire Hockey Type Imports
 import type { Game } from "$lib/utils/games";
+import type { Sponsor } from "$lib/utils/sponsors";
 
 export default function getRecord(season: Season) {
   let wins = 0;
@@ -20,6 +21,7 @@ export default function getRecord(season: Season) {
 
 export interface Season {
   year: number;
+  sponsors: Sponsor[];
   games: Game[];
   roster: object;
 }
