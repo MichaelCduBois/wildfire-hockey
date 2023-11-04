@@ -100,16 +100,40 @@
           "played": true
         },
         {
-          "date": "2023-10-20*",
-          "opponent": "Angels",
-          "location": "MCIHA Rink",
+          "date": "2023-11-04",
+          "opponent": "Elko Hockey Association Game 1",
+          "location": "Elko",
           "goalsFor": 0,
           "goalsAgainst": 0,
           "played": false
         },
         {
-          "date": "2023-11-04*",
-          "opponent": "Elko Hockey Association",
+          "date": "2023-11-04",
+          "opponent": "Elko Hockey Association Game 2",
+          "location": "Elko",
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "played": false
+        },
+        {
+          "date": "2023-11-04",
+          "opponent": "Elko Hockey Association Game 3",
+          "location": "Elko",
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "played": false
+        },
+        {
+          "date": "2023-11-04",
+          "opponent": "Elko Hockey Association Game 4",
+          "location": "Elko",
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "played": false
+        },
+        {
+          "date": "2023-11-04",
+          "opponent": "Elko Hockey Association Game 5",
           "location": "Elko",
           "goalsFor": 0,
           "goalsAgainst": 0,
