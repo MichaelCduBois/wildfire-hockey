@@ -103,41 +103,41 @@
           "date": "2023-11-04",
           "opponent": "Elko Hockey Association Game 1",
           "location": "Elko",
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "played": false
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "played": true
         },
         {
           "date": "2023-11-04",
           "opponent": "Elko Hockey Association Game 2",
           "location": "Elko",
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "played": false
+          "goalsFor": 14,
+          "goalsAgainst": 4,
+          "played": true
         },
         {
           "date": "2023-11-04",
           "opponent": "Elko Hockey Association Game 3",
           "location": "Elko",
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "played": false
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "played": true
         },
         {
           "date": "2023-11-04",
           "opponent": "Elko Hockey Association Game 4",
           "location": "Elko",
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "played": false
+          "goalsFor": 12,
+          "goalsAgainst": 8,
+          "played": true
         },
         {
           "date": "2023-11-04",
           "opponent": "Elko Hockey Association Game 5",
           "location": "Elko",
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "played": false
+          "goalsFor": 11,
+          "goalsAgainst": 6,
+          "played": true
         }
       ],
       "roster": {
