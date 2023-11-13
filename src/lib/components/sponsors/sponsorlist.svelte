@@ -1,6 +1,6 @@
 <script lang="ts">
   // Wildfire Hockey Imports
-  import { SponsorRow } from "$lib/components/sponsors"
+  import { SponsorRow } from "$lib/components/sponsors";
   import type { Season } from "$lib/utils/seasons";
 
   export let season: Season;
@@ -8,7 +8,9 @@
 
 <div class="logo-cloud-container">
   {#each season.sponsors as sponsorRowData}
-    <SponsorRow {sponsorRowData} year={season.year} />
+    <SponsorRow
+      {sponsorRowData}
+      year={season.year} />
   {/each}
 </div>
 
