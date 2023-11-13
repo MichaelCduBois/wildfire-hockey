@@ -2,7 +2,7 @@
   // 3rd Party Imports
   import { Accordion, AccordionItem, Table } from "@skeletonlabs/skeleton";
   // Wildfire Hockey Imports
-  import { SponsorList } from "$lib/components/sponsors"
+  import { SponsorList } from "$lib/components/sponsors";
   import gamesTable from "$lib/utils/games";
   import goaliesTable from "$lib/utils/goalies";
   import playersTable from "$lib/utils/players";
@@ -37,10 +37,12 @@
             ><h3 class="season">
               {season.year}: {getRecord(season)}
             </h3></svelte:fragment>
-            <svelte:fragment slot="content">
+          <svelte:fragment slot="content">
             <!-- Show Sponsors of Previous Seasons -->
             {#if seasons[0].year !== season.year}
-              <h3 class="section-heading">Thank you to our sponsors for the {season.year} season:</h3>
+              <h3 class="section-heading">
+                Thank you to our sponsors for the {season.year} season:
+              </h3>
               <SponsorList {season} />
             {/if}
             <!-- Show Season Statistics -->

@@ -35,8 +35,8 @@ function getStats(selectedSeason: number) {
             game.goalsFor > game.goalsAgainst
               ? "Win"
               : game.goalsFor < game.goalsAgainst
-              ? "Loss"
-              : "Tie";
+                ? "Loss"
+                : "Tie";
         } else {
           // Generate Score String
           game.score = "-";

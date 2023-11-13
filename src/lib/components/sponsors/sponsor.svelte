@@ -7,9 +7,9 @@
 </script>
 
 <a
-class="logo-item !bg-transparent shadow-transparent"
-href={sponsor.url}
-target="_blank">
+  class="logo-item !bg-transparent shadow-transparent"
+  href={sponsor.url}
+  target="_blank">
   <img
     class={`sponsor-${sponsor.tier}`}
     src={`sponsors/${year}/${sponsor.name}.png`}
