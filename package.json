@@ -19,7 +19,7 @@
     "@skeletonlabs/skeleton": "^2.5.1",
     "@skeletonlabs/tw-plugin": "^0.2.4",
     "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.27.6",
+    "@sveltejs/kit": "^1.27.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.10.3",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
