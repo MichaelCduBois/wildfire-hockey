@@ -1,6 +1,15 @@
 {
   "seasons": [
     {
+      "year": 2025,
+      "sponsors": [],
+      "games": [],
+      "roster": {
+        "skaters": [],
+        "goalies": [],
+      },
+    },
+    {
       "year": 2023,
       "sponsors": [
         [
