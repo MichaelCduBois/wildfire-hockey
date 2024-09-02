@@ -24,7 +24,7 @@
     "@types/node": "^20.11.13",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "6.19.1",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.43.0",
