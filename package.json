@@ -14,7 +14,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@floating-ui/dom": "^1.6.10",
+    "@floating-ui/dom": "^1.6.12",
     "@playwright/test": "^1.49.0",
     "@skeletonlabs/skeleton": "^2.10.3",
     "@skeletonlabs/tw-plugin": "^0.3.1",
